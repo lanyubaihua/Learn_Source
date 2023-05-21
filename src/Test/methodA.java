@@ -8,6 +8,8 @@ public class methodA {
     private  m2 m2;
     public void say(){
 m2.say();
+        System.out.println("And me");
     }
+
 
 }
