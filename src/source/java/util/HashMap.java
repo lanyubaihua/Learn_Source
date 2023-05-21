@@ -139,7 +139,6 @@ import sun.misc.SharedSecrets;
  */
 public class HashMap<K,V> extends AbstractMap<K,V>
     implements Map<K,V>, Cloneable, Serializable {
-
     private static final long serialVersionUID = 362498820763181265L;
 
     /*
@@ -396,7 +395,6 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * bootstrapping mechanics that are currently not needed.)
      */
     transient Node<K,V>[] table;
-
     /**
      * Holds cached entrySet(). Note that AbstractMap fields are used
      * for keySet() and values().
@@ -525,8 +523,10 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * @return the number of key-value mappings in this map
      */
     public int size() {
+        System.out.println("数组长度"+table.length);
         return size;
     }
+
 
     /**
      * Returns <tt>true</tt> if this map contains no key-value mappings.

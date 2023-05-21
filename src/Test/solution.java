@@ -1,11 +1,11 @@
 
-import java.util.HashMap;
+import com.sun.org.apache.bcel.internal.generic.RET;
+import org.omg.CORBA.INTERNAL;
 
-public class solution {
-   public static void main(String[] args) {
-    HashMap<String,Integer>hashMap=new HashMap<>(10);
-   hashMap.put("song",123);
+import javax.print.attribute.standard.Media;
 
-   }
-
+class solution {
+    public static void main(String[] args) {
+        new methodA().say();
+    }
 }
